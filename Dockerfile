@@ -1,6 +1,6 @@
 
 FROM node
-WORKDIR /usr/src/backend
+WORKDIR ../backend
 COPY package.json .
 RUN npm install
 COPY . .
