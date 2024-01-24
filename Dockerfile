@@ -7,7 +7,7 @@ COPY /target/release/meilisearch /bin/meilisearch # buildkit
 COPY /target/release/meilitool /bin/meilitool # buildkit
 RUN /bin/sh -c ln -s /bin/meilisearch /meilisearch # buildkit
 WORKDIR /meili_data
-EXPOSE map[7700/tcp:{}]
+EXPOSE 7700
 ENTRYPOINT ["tini" "--"]
 CMD ["/bin/sh" "-c" "/bin/meilisearch"]
 
