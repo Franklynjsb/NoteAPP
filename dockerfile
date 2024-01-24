@@ -6,8 +6,11 @@ WORKDIR /backend
 
 RUN npm install
 
-ADD file:282274bb02b29182f35c732f021f3dab6de9f16a1ae24460061ad1abdca6444a in / 
-
+RUN -d --name=meilisearch --restart=always --network=app-net \
+    -p 8080:7700 \
+    -v /opt/meilisearch/data:/meili_data \
+    -e MEILI_MASTER_KEY=pwd123 \
+    getmeili/meilisearch
 # RUN npm install -g nodemon
 RUN npm install -g nodemon
 
