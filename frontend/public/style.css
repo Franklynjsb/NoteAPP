@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&family=Inter:wght@300&family=Montserrat:wght@300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #e8d2f3;
+    
+}
+.auth{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e8d2f3;
+}
+/* SIGN UP AND LOGIN FORM*/
+.auth form{
+    height:450px;
+    width: 450px;
+    border: 2px solid #e5e5e5;
+    background-color: #e5e5e5;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.178);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.auth form input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #1e1e1e;
+}
+
+.auth form button{
+    background-color: #cca9dd;
+    color: #1e1e1e;
+    font-weight: 600;
+    border:none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.auth form h3 {
+    color: rgb(199, 20, 20);
+    text-align: center;
+}
+
+/* HOMEPAGE */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    text-align: center;
+}
+.header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1e1e1e;
+}
+
+.header .personalName {
+    text-decoration: none;
+    color: #24031e;
+}
+
+.header .logout {
+    width: 70px;
+    height: 70px;
+    background: #cca9dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.header .back {
+    width: 70px;
+    height: 70px;
+    background: #cca9dd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.logout span{
+    color: #1e1e1e;
+    font-size: 30px;
+}
+.back span{
+    color: #1e1e1e;
+    font-size: 30px;
+}
+
+/*SEARCH BOX*/
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input {
+    width: 80%;
+    height: 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #1e1e1e;
+}
+
+/* NOTE */
+.notes{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 1rem;
+    pad: 1rem;
+    justify-items: center;
+    align-items: center;
+    margin: 40px 30px;
+}
+
+.notes a{
+    text-decoration: none;
+}
+
+.notes h2 {
+    font-weight: 400;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.note{
+    height: 350px;
+    background-color: #cca9dd;
+    padding: 20px;
+    width: 300px;
+    color: #1e1e1e;
+    box-shadow: 0 0 2px 2px #e5e5e5;
+    transform: rotate(-4deg);
+}
+
+.note:hover{
+    background-color: #ad87c0;
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+/* Create Button */
+
+.fab{
+    position: fixed;
+    padding: 10px 20px;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cca9dd;
+    border: none;
+    cursor: pointer;
+}
+
+.fab span{
+    color: #1e1e1e;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.fab h3{
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 20px;
+    margin: 0 10px;
+}
+/*NEW NOTE*/
+.new {
+    margin: 0 auto;
+    width: 80%;
+    padding: 30px;
+}
+
+.new input{
+    width: 100%;
+    border: #e5e5e5 solid 1px;
+    border-radius: 10px;
+    font-size: 18px;
+    font: 500;
+    color: #1e1e1e;
+    padding: 0 20px;
+    font-weight: 500;
+    height: 50px;
+}
+.new textarea {
+    width: 100%;
+    border: #e5e5e5 solid 1px;
+    border-radius: 10px;
+    font-size: 18px;
+    font: 500;
+    color: #1e1e1e;
+    padding: 10 20px;
+    font-weight: 500;
+}
+
+.new form {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    /*gap: 12px;*/
+}
+
+.new h2 {
+    font-weight: 600;
+    padding: 25px 0;
+    color: #1e1e1e;
+}
+
+
+.new button{
+    margin:25px;
+    font-size: 20px;
+    width: 100%;
+    background-color: #cca9dd;
+    color: #1e1e1e;
+    border: none;
+    padding: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+.new button:hover{
+    transition: all 0.5s ease-in;
+    background-color: #ad87c0;
+}
