@@ -2,7 +2,7 @@ FROM node:8.10
 
 COPY . .
 
-WORKDIR /usr/src
+WORKDIR /backend
 
 RUN npm install
 
@@ -10,7 +10,7 @@ RUN npm install
 RUN npm install -g nodemon
 
 EXPOSE 3000
-WORKDIR ./backend
+
 CMD ["npm", "run", "start"]
 
 #FROM node:20.11.0
