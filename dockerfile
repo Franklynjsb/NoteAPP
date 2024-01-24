@@ -6,11 +6,7 @@ WORKDIR /backend
 
 RUN npm install
 
-RUN -it --rm \
-  -p 7700:7700 \
-  -v $(pwd)/meili_data:/meili_data \
-  getmeili/meilisearch:v1.6
-  meilisearch --master-key="MASTER_KEY"
+ADD file:282274bb02b29182f35c732f021f3dab6de9f16a1ae24460061ad1abdca6444a in / 
 
 # RUN npm install -g nodemon
 RUN npm install -g nodemon
