@@ -7,13 +7,11 @@ WORKDIR /usr/src
 RUN npm install
 
 # RUN npm install -g nodemon
-RUN npm install -g forever
+RUN npm install -g nodemon
 
 EXPOSE 3000
-
-# CMD ["nodemon", "-w", "api", "-w", "config"]
-CMD ["forever", "-w", "start", "app.js"]
-
+WORKDIR ./backend
+CMD ["npm", "run", "start"]
 
 #FROM node:20.11.0
 #WORKDIR /usr/src/app
