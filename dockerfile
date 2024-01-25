@@ -13,7 +13,7 @@ RUN npm install -g nodemon
 EXPOSE 3000
 
 CMD ["getmeili/meilisearch:v0.26.1"] 
-RUN --rm -p 127.0.0.1:7700:7700 getmeili/meilisearch:v0.26.1
+CMD ["docker","run", "--rm", "-p", "127.0.0.1:7700:7700", "getmeili/meilisearch:v0.26.1"]
 CMD ["npm", "run", "start"]
 
 #FROM node:20.11.0
