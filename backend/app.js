@@ -11,12 +11,12 @@ const methodOverride = require('method-override');
 
 //For Meilisearch
 const meiliclient = new MeiliSearch({
-    host: 'http://localhost:34567',
+    host: 'https://noteapp-23s2.onrender.com:34567',
     apiKey: 'aSampleMasterKey'
 });
 meiliclient.createIndex("notes", {primaryKey:"$id"});
 //For Appwrite
-client.setEndpoint('http://localhost/v1').setProject('65aee8ed472874999b6e');
+client.setEndpoint('https://noteapp-23s2.onrender.com/v1').setProject('65aee8ed472874999b6e');
 
 const account = new Account(client);
 
