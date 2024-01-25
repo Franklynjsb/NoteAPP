@@ -12,6 +12,7 @@ RUN npm install -g nodemon
 EXPOSE 7700
 EXPOSE 7000
 EXPOSE 3000
+EXPOSE 34567
 
 CMD ["npm", "run", "start"]
 
