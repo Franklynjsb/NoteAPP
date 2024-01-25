@@ -9,16 +9,14 @@ RUN npm install
 RUN npm i meilisearch
 RUN npm i appwrite
 RUN npm install -g nodemon
-EXPOSE 7700
-EXPOSE 7000
+
 EXPOSE 3000
-EXPOSE 34567
 
 CMD ["npm", "run", "start"]
 
 #FROM node:20.11.0
 #WORKDIR /usr/src/app
 #COPY . .
-#EXPOSE 3000
+
 #WORKDIR ./backend
 #CMD ["npm", "run", "start"]
