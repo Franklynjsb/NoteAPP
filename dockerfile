@@ -7,7 +7,7 @@ WORKDIR /backend
 RUN npm install
 
 RUN npm i meilisearch
-# RUN npm install -g nodemon
+RUN npm i appwrite
 RUN npm install -g nodemon
 EXPOSE 7700
 EXPOSE 7000
