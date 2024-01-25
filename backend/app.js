@@ -16,7 +16,7 @@ const meiliclient = new MeiliSearch({
 });
 meiliclient.createIndex("notes", {primaryKey:"$id"});
 //For Appwrite
-client.setEndpoint('https://noteapp-23s2.onrender.com1').setProject('65aee8ed472874999b6e');
+client.setEndpoint('https://noteapp-23s2.onrender.com').setProject('65aee8ed472874999b6e');
 
 const account = new Account(client);
 
